@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Login2 {
@@ -34,6 +35,8 @@ public class Login2 {
 	    wait.until(ExpectedConditions.elementToBeClickable(
 	            By.xpath("//input[@value='Login']")))
 	        .click();
+	    Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+	    driver.quit();
 	}
 
 }
