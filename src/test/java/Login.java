@@ -8,7 +8,7 @@ public class Login {
 		driver.get("https://tutorialsninja.com/demo/");
 		driver.manage().window().maximize();
 		driver.manage().window().maximize();
-		int x = 10;
+		int x = 150;
 
 	}
 
