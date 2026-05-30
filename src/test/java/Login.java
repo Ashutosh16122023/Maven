@@ -7,6 +7,8 @@ public class Login {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://tutorialsninja.com/demo/");
 		driver.manage().window().maximize();
+		driver.manage().window().maximize();
+		int x = 10;
 
 	}
 
